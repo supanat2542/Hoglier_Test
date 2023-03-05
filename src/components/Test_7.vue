@@ -10,7 +10,7 @@
         <p>
             Input B = <input v-model="numberB" type="number" placeholder="0" min="1"/>
         </p>
-        <button class="buttonInput" v-on:click="toCalculate()">Input</button>
+        <button class="buttonInput" v-on:click="toCalculate()">Calculate</button>
         <p>
             Result C = {{ numberC }}
         </p>

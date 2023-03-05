@@ -7,7 +7,7 @@
         <p>
             Input Root 10 = <input v-model="numberRoot10" type="String" placeholder="0" />
         </p>
-        <button v-on:click="toCalculate()" class="buttonInput">Input</button>
+        <button v-on:click="toCalculate()" class="buttonInput">Convert</button>
         <p>
             Input Root 2 = {{ numberRoot2 }}
         </p>
@@ -37,7 +37,6 @@ export default {
                     }
                 } while (this.numberRoot10 > 0)
             } else {
-                this.numberRoot10 = 0
                 console.log("กรุณาใส่ค่ามากกว่า 0")
             }
         }

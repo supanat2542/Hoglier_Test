@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+}
+.logo{
+  background: #190D0D;
+  color: #E3E3E3;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left:  20px;
+  margin: 0;
+}
+section{
+  width: 20%;
+  float: left;
+}
+aside{
+  height: 500px;
+  width: 80%;
+  margin: 0px;
+  float: right;
+}
+.mainQuest{
+  color: #663333;
+  text-align: center;
+}
+.bodyQuest{
+  margin: 50px;
+}
+button{
+  background-color:white;
+  border: none;
+  padding: 20px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.5s;
+  width: 100%;
+  border-radius: 0px;
+}
+button:hover {background-color: #E06E5A;}

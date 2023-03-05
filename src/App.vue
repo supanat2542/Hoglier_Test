@@ -52,7 +52,7 @@
   export default {
     data() {
         return {
-            showTest: 0,
+            showTest: 1,
         };
     },
     methods:{

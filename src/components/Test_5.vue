@@ -19,7 +19,7 @@ export default {
         };
     },
     mounted() {
-        this.maxValue = this.number[0]
+        this.onlyNUmber.push(2)
         for (var i = 2; i <= this.number; i++) {
             for (var j = 2; j <= i; j++) {
                 if(i%j==0){

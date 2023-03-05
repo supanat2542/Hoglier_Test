@@ -5,12 +5,12 @@
             7. จากสูตร a^2 + b^2 = c^2 ให้หาค่าด้านตรงข้ามมุมฉากของ สามเหลี่ยม โดยให้ input เป็นค่า a และ b และผลลัพธ์เป็นค่า c
         </p>
         <p>
-            Input A = <input v-model="numberA" type="number" placeholder="0"/>
+            Input A = <input v-model="numberA" type="number" placeholder="0" min="1"/>
         </p>
         <p>
-            Input B = <input v-model="numberB" type="number" placeholder="0" />
+            Input B = <input v-model="numberB" type="number" placeholder="0" min="1"/>
         </p>
-        <button v-on:click="toCalculate()">Input</button>
+        <button class="buttonInput" v-on:click="toCalculate()">Input</button>
         <p>
             Result C = {{ numberC }}
         </p>
@@ -31,7 +31,11 @@ export default {
             if(this.numberA>0&&this.numberB>0){
                 var num = (this.numberA**2)+(this.numberB**2)
                this.numberC =  Math.sqrt(num)
-            }
+            }else{
+                this.numberA=''
+                this.numberB=''
+                console.log("กรุณาใส่ค่า A & B มากกว่า 0")
+            } 
         }
     }
 }
